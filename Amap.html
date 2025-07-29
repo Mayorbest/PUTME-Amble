@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lets do 1</title>
+  </head>
+  <body>
+    <h2> Cart Quantity</h2>
+    <button onclick="
+    console.log(`CartQuantity: ${CartQuantity}`)
+    ">
+    show quantity</button>
+    <button onclick="CartQuantity = CartQuantity + 1;
+    console.log(`CartQuantity: ${CartQuantity}`);
+    ">
+    Add to cart</button>
+    <button onclick="
+    CartQuantity= CartQuantity + 2;
+    console.log(`CartQuantity: ${CartQuantity}`);">+2</button>
+    <button onclick="CartQuantity + 3;
+    console.log(`CartQuantity; ${CartQuantity}`);
+    ">+3</button>
+    <button onclick="CartQuantity=CartQuantity - CartQuantity;
+    console.log('Cart was reset');
+    console.log(`CartQuantity: ${CartQuantity}`)">Rest cart</button>
+    <script>
+      let CartQuantity = 0;
+      //we can also  use 'CartQuantity +=2' as a shortcut for the button +2
+     //it works for both button 1 and 3 also but for button 1 there's even a shorter method which is "CartQuantity++;"
+     //remember to always end your code with a semi colon sharp
+     // theese methods can also be applied with other operators like *2=, /2= --= and so on shey you get sharp
+     // camelCase is the standard naming convection for JS where the first word start with a lower case we have also PascalCase and also kebab-case but this won't work on JS because JS treat - as minus sign and finally snake_case not really used in JS 
+      </script>

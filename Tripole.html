@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/Sun.css">
+  <title>Nature clash</title>
+</head>
+<body>
+  <h2>Triangle of Nature Game</h2>
+  <h3>Chose your representative</h3>
+  <button onclick=" chooseColor();
+  
+  alert(`You  choose Sun as your rep and computer chose ${N}, ${p}`);
+  ">
+    Sun
+  </button>
+  <button onclick="
+  chooseColor()
+
+  alert(`You  choose Moon, computer choose + ${N}, + ${p}`);">
+  Moon</button>
+  <button onclick="
+  chooseColor()
+  ">
+  Earth</button>
+  <script>
+    let N = '';
+
+    function chooseColor() { 
+    const chose = Math.random();
+    if(chose >= 0 && chose < 1 / 3) {N = 'Sun'}
+    else if(chose >= 1 / 3 && chose < 2 / 3) {N = 'Moon'}
+    else if(chose >= 2 / 3 && chose < 1) {N = 'Earth'}
+
+    let p ='';
+  if(N === Sun) {p = 'You Tie'}
+  else if(N === Moon) {p = 'Did you know the Moon can not survive without the sun therefore You lose'}
+  else if (N === Earth) {p = 'Did you know the Eath electromagnetic force blocks the sun storm radiation, thus You win'}
+    }
+  </script>
+</body>
+</html>
